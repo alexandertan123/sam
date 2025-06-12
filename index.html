@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Armenian Monuments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8a2025; /* deep Armenian red */
+      --secondary: #f7f5f2; /* light parchment */
+      --accent: #1a1a1a;
+      --radius: 1rem;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: var(--accent);
+      background-color: var(--secondary);
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      align-items: center;
+    }
+    .hero .image-placeholder,
+    .image-placeholder {
+      width: 100%;
+      height: 300px;
+      background: repeating-linear-gradient(45deg, #ddd, #ddd 10px, #f4f4f4 10px, #f4f4f4 20px);
+      border: 3px dashed #bbb;
+      border-radius: var(--radius);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #888;
+      font-style: italic;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    ul {
+      list-style: disc inside;
+      margin-left: 1rem;
+    }
+    .initiatives li {
+      margin-bottom: .75rem;
+    }
+    .monument-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .monument-grid .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,.06);
+      padding: 1rem;
+      text-align: center;
+    }
+    .monument-grid .card h4 {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .map {
+      width: 100%;
+      height: 400px;
+      background: #e0e0e0;
+      border: 3px dashed #bbb;
+      border-radius: var(--radius);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-style: italic;
+    }
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: .75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: .5rem;
+      font: inherit;
+    }
+    .contact-form button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: .75rem 1.5rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .contact-form button:hover {
+      background: #6e1a1d;
+    }
+    footer {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Save Armenian Monuments</h1>
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#organization">Organization</a>
+      <a href="#monuments">Monuments</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div>
+      <h2>Our Church is Our Voice</h2>
+      <p>Preserving, remembering and defending Armenian heritage in the Caucasus.</p>
+    </div>
+    <div class="image-placeholder">Hero Image Placeholder</div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission">
+    <h2>Welcome to Armenian Monuments</h2>
+    <p>On November 17, 2020, with participation of local and international journalists, a final pilgrimage to St. Minas church at Hak village, Northern Kashatagh, was carried out. The 17th‑century church had been restored in 2009 by Tufenkian Foundation with a grant from Virginia Davies. Ms. Davies was among the pilgrims who gathered in St. Minas, sharing a deep concern about the possible desecration, destruction and erasure of Armenian cultural heritage by Azerbaijan, as had been done by Turkey in the aftermath of the 1915 genocide.</p>
+    <p>On her return to New York, together with Antranig Kasbarian and Chris Parnagian and under the aegis of the Armenian Apostolic Church of America (Eastern Prelacy), Save Armenian Monuments (SAM) was launched. The mission of SAM is to <strong>preserve, remember and defend Armenian heritage in the Caucasus</strong>. These monuments establish that these lands, including those now under Azeri control, are historic Armenian lands. SAM coordinates with stakeholders to preserve monuments, advocates for the human right to worship, and educates Armenians worldwide about their historic homelands.</p>
+  </section>
+
+  <!-- Initiatives Section -->
+  <section id="initiatives">
+    <h2>Initial Initiatives</h2>
+    <ul class="initiatives">
+      <li>Engaging with local authorities and communities in community archaeology projects and clean‑ups of remote Armenian churches, cemeteries and sacred sites in Artsakh, including Hakobavank, Vaghuhas’ Church of Holy Mother of God, and Dahraz’s Saint Virgin Mary.</li>
+      <li>Partnering in the organization of the International Religious Freedom and Peace conference at Holy Etchmiadzin.</li>
+      <li>Convening a strategic planning summit in Yerevan that unites key actors to find solutions for cultural preservation.</li>
+      <li>Supporting the technological modernization of Research on Armenian Architecture, a Yerevan‑based NGO that meticulously documents Artsakh’s heritage.</li>
+      <li>Researching alternative avenues for gaining access to Armenian monuments under Azerbaijani control and raising awareness through lectures, panels and media publications.</li>
+      <li>Publishing articles on cultural and humanitarian issues in Artsakh in <em>Time Magazine</em>, <em>The Wall Street Journal</em> and <em>Foreign Policy</em>.</li>
+      <li>Carrying out pilgrimages to Artsakh sites, including participation in Palm Sunday services and celebrations.</li>
+      <li>Submitting testimony in support of the European Parliament resolution condemning Azerbaijan’s ongoing erasure of Armenian cultural monuments.</li>
+      <li>Issuing press releases opposing Azerbaijan’s establishment of a state organ for the Albanization of Armenian churches in Artsakh.</li>
+    </ul>
+  </section>
+
+  <!-- Featured Organization -->
+  <section id="organization">
+    <h2>Featured Organization: Research on Armenian Architecture</h2>
+    <div class="image-placeholder" style="height:250px;">Organization Image Placeholder</div>
+    <p style="margin-top:1rem;">Prompted by a moral obligation to study historical Armenian heritage before its total annihilation and to save it at least in photographs, architect‑planner Armen Hakhnazarian embarked on the documentation of Armenian monuments in Western Armenia. Today, the Research on Armenian Architecture (RAA) continues to safeguard Armenian architectural heritage through meticulous research and technological innovation.</p>
+  </section>
+
+  <!-- Monuments Section -->
+  <section id="monuments">
+    <h2>Featured Monuments</h2>
+    <div class="monument-grid">
+      <!-- Each card gets a placeholder you can replace with images -->
+      <div class="card">
+        <div class="image-placeholder">Tzitzernavank</div>
+        <h4>Tzitzernavank</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Amaras</div>
+        <h4>Amaras</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Vankasar</div>
+        <h4>Vankasar</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Handaberd</div>
+        <h4>Handaberd</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">S. Sarkis &amp; S. Grigor</div>
+        <h4>S. Sarkis &amp; S. Grigor (Tzar)</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">S. Astvatsatsin Vank</div>
+        <h4>S. Astvatsatsin Vank (Kilise)</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Varazgom</div>
+        <h4>Varazgom</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Katarovank</div>
+        <h4>Katarovank</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Gtichavank</div>
+        <h4>Gtichavank</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Yerits Mankants</div>
+        <h4>Yerits Mankants</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Tigranakert</div>
+        <h4>Tigranakert</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Ghazanchetsots</div>
+        <h4>Ghazanchetsots</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Kish</div>
+        <h4>Kish</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Hakobavank</div>
+        <h4>Hakobavank</h4>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">Saint Yeghishe</div>
+        <h4>Saint Yeghishe</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map">
+    <h2>Map of Selected Sites</h2>
+    <div class="map">Map Placeholder – Embed an interactive map here</div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section id="social" style="text-align:center;">
+    <h2>Follow Us on Social Media</h2>
+    <p>Stay updated on our latest efforts: <strong>@savearmenianmonuments</strong> on Instagram</p>
+    <div class="image-placeholder" style="max-width:600px;margin:2rem auto;">Instagram Feed Placeholder</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Connect With Us</h2>
+    <p><strong>Address:</strong> 138 E 39th St, New York, NY 10016</p>
+    <p><strong>Email:</strong> <a href="mailto:info@savearmenianmonuments.com">info@savearmenianmonuments.com</a></p>
+
+    <h3>Send Us a Message</h3>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <label style="display:flex;align-items:center;gap:.5rem;">
+        <input type="checkbox" required>
+        <span>I give consent to use this information as described in your privacy policy.</span>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Save Armenian Monuments. All rights reserved.</p>
+  </footer>
+</body>
+</html>
